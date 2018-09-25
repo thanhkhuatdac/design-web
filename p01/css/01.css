@@ -1,0 +1,17 @@
+/* Document CSS */
+
+.div {
+	border: 1px solid #1c1f23;
+	/*chuyen kieu block => inline*/
+	/*c1:*/
+	 /*float: left;*/
+	/*c2*/
+	display: inline;
+
+
+}
+
+.span {
+	border: 1px solid #216bce;
+	display: block;	
+}

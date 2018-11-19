@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ex2</title>
+	<script type="text/javascript">
+		var user1 = "Nguyen Van A"; 
+		var user2 = "Nguyen Van B"; 
+		var user3 = "Nguyen Van C";
+
+		// document.write("Xin chao " + user1 + " da ghe tham dien dan. <br/>");
+		// document.write("Xin chao " + user2 + " da ghe tham dien dan. <br/>");
+		// document.write("Xin chao " + user3 + " da ghe tham dien dan. <br/>");
+
+		function showMessage(user) {
+			document.write("Xin chao " + user + " da ghe tham dien dan. <br/>");
+		}
+		// cach 1: Goi truc tiep
+		showMessage("Nguyen Van A");
+		showMessage("Nguyen Van B");
+
+		// cach 3: goi ham tu 1 ham khac
+		function callShowMessage() {
+			showMessage("Nguyen Van B");
+		}
+	</script>
+</head>
+<body>
+	<!-- cach2: thong qua 1 cach goi ham tu 1 su kien -->
+	<a href="#" onclick="showMessage('Nguyen Van A')">Xin chao</a>
+	<br/>
+	<!-- cach 3: goi ham tu 1 ham khac -->
+	<a href="#" onclick="callShowMessage()">Xin chao 2</a>
+</body>
+</html>
